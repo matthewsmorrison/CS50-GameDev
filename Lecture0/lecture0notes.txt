@@ -1,0 +1,31 @@
+love.load() - function given by Love2D, used for initialising game state at beginning of program execution. Just  start-up function.
+
+love.update(dt) - takes in a variable called dt, overwrite it with own behaviour, love executes this each frame. Typically 1/60th second.
+
+love.draw() - all of our rendering behaviour in it.
+
+love.graphics.printf(text, x, y, [width], [align]) - similar to printf in C but draws somewhere on screen
+
+love.window.setMode(width, height, params) - used to initialise the window's dimensions. Sets up our window.
+
+Default font size in love is 12pt
+
+A table in lua is defined by { }
+
+To run a file using love:
+1. Download love2D (https://love2d.org/#download)
+2. Add love2d to your bash profile (if on Mac)
+# alias to love
+alias love="/Applications/love.app/Contents/MacOS/love"
+
+3. Then change directory so that a folder below contains a main.lua file
+4. Then type 'love [folder_name]'
+
+love.event.quit() - quits the application
+
+the 'push' library allows you to setup a virtual resolution
+the 'push' file needs to be in the same directory
+
+.. - string concatenation in LUA
+
+For sound - https://www.bfxr.net/
